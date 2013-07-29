@@ -129,9 +129,8 @@
 	<%- @content %>
 
 	<div class="footer pure-u-1">
-		View the source of this layout to learn more. Made with love by the YUI Team. 
-		&copy; Company <%- (new Date()).getFullYear() %>.
-		This website was last updated at <%= @site.date.toISOString() %>
+		&copy;<%- (new Date()).getFullYear() %> SUN STAR IT.
+		updated <%= @site.date.toISOString() %>
 	</div>
 </div>
 
