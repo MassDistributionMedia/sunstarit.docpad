@@ -1,0 +1,9 @@
+---
+title: About
+layout: page
+tags: ['intro', 'page']
+iconmonstr: 'icon2'
+pageOrder: 2
+---
+
+<% %>
