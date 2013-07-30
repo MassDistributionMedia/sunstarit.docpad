@@ -4,6 +4,8 @@ body {
     line-height: 1.7em;
 }
 
+a{text-decoration: none;color:#FFE03F;}
+
 .l-box {
     padding: 1em;
 }
@@ -135,9 +137,6 @@ body .primary-button {
     display: inline-block;
 }
 
-.content .content-ribbon {
-    border-bottom: 1px solid #eee;
-}
 
 .second-section{
     background: url(https://googledrive.com/host/0B9LVk4xbDIJTMnlQWjZ1TGMxQWs/second_section-bg.jpg);
@@ -196,6 +195,26 @@ body .primary-button {
 .center-text{
     text-align: center;
 }
+
+/* YUI-MODULE-ACCORDION start */
+    #accordions{color: #fbfbfb;letter-spacing: normal;}
+    #accordions h1{color: #fff;font-family: 'Oswald', sans-serif;font-weight: normal;}
+    .yui3-js-enabled .yui3-widget-loading { display: none; }
+
+    /* YUI 3 Accordion Skin Styling
+     */
+
+    .accordion-test-vert {width:auto;background-color:#fff;}
+    .my-title-vert{padding: 13px 0}
+    .vision-vert{background-color:#2980b9;}
+    .mission-vert{background-color:#3498db;}
+    .job-vert{background-color:#3aa8f2;}    
+    .my-title-vert a {display:block;text-align:center;cursor:pointer;}
+    .my-title-vert a {padding:4px 0;}
+    .my-title-vert a:focus
+    .my-title-vert a:hover {background-color:#eee;}
+    .my-section-vert{padding:10px;}
+/* YUI-MODULE-ACCORDION end */
 
 .footer {
     background: #111;

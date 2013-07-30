@@ -1,3 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>YUI 3 Accordion Standalone Vert Example</title>
+	<meta http-equiv=content-type content="text/html; charset=utf-8">
+
+	<script src="http://yui.yahooapis.com/3.10.2/build/yui/yui-min.js"></script>
+
+	<style type="text/css">
+	.yui3-js-enabled .yui3-widget-loading { display: none; }
+
+	/* YUI 3 Accordion Examples Page Styling 
+	 */
+
+	#accordions {margin:0 340px 0 10px;padding:0 10px 10px;background-color:#aaa;}
+	#accordions h4 {padding:10px 0 6px;}
+
+	/* YUI 3 Accordion Sample Skin Styling
+	 */
+
+	.accordion-test-vert {width:auto;background-color:#fff;}
+	.my-title-vert {background-color:#ccc;margin:1px;}
+	.my-title-vert a {display:block;text-align:center;cursor:pointer;}
+	.my-title-vert a {padding:4px 0;}
+	.my-title-vert a:focus
+	.my-title-vert a:hover {background-color:#eee;}
+	.my-section-vert{margin:1px;padding:10px;}
+	</style>
+</head>
+<body class="yui3-skin-sam">
+
+
+<div id="accordions">
+	<h4>Vertical</h4>
+	<div id="accordion-test-vert-markup" class="accordion-test-vert"></div>
+	<ul id="accordion-test-vert-markup-content" class="yui3-widget-loading">
+		<li>
+			<div class="my-title-vert"><a href="javascript:void(0);">#1</a></div>
+			<div class="my-section-vert"><p>testing</p></div>
+		</li>
+		<li>
+			<div class="my-title-vert"><a href="javascript:void(0);">#2</a></div>
+			<div class="my-section-vert"><p>testing testing</p></div>
+		</li>
+		<li>
+			<div class="my-title-vert"><a href="javascript:void(0);">#3</a></div>
+			<div class="my-section-vert">
+				<p>testing</p><p>testing</p><p>testing</p><p>testing</p><p>testing</p>
+				<p>testing</p><p>testing</p><p>testing</p><p>testing</p><p>testing</p>
+			</div>
+		</li>
+	</ul>
+
+
+<script type="text/javascript">
 YUI({
 //	filter: 'debug', combine: false,
 	gallery: 'gallery-2013.06.26-23-09'
@@ -104,3 +159,7 @@ function(Y)
 	},
 	'#insert-section');
 });
+</script>
+
+</body>
+</html>
