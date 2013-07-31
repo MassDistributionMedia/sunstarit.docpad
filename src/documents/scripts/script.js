@@ -4,9 +4,24 @@ YUI({
 }).use(
 	'gallery-accordion-horiz-vert',
 	'anim-base',
-	'node-focusmanager',
+	'node-focusmanager','node','event',
 function(Y)
 {
+	Y.all('.main .l-box').on({
+		mouseover: function(){
+			Y.one('#Shape_8 path').addClass('path-over');
+			Y.one('#Shape_8 path').removeClass('path-off');
+			Y.one('.second-section .pure-u-1-3').setStyle('border-bottom','16px solid rgba(25, 25, 112, 0.8)');
+			Y.one('#Shape_8 path').removeClass('notransition');
+		},
+		mouseout: function(){
+			Y.one('#Shape_8 path').removeClass('path-over');
+			Y.one('#Shape_8 path').addClass('path-off');
+			Y.one('.second-section .pure-u-1-3').setStyle('border-bottom','16px solid #bdc3c7');
+			Y.one('#Shape_8 path').addClass('notransition');
+		}
+	});
+
 	function onTitleClicked(e, a)
 	{
 		var t = e.target;

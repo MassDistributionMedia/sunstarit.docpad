@@ -6,12 +6,20 @@ body {
 
 a{text-decoration: none;color:#FFE03F;}
 
+::-webkit-scrollbar{width:17px;background:#fff;}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
+::-webkit-scrollbar-thumb{background:rgba(102,51,0,0.2);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
+::-webkit-scrollbar-thumb:window-inactive{background:rgba(216,210,206,0.3);}
+
 .l-box {
     padding: 1em;
 }
 
 #logoSVG{
     height: 105px;
+}
+#Shape_8 path{
+    fill:midnightblue;
 }
 
 .absolute{
@@ -44,8 +52,13 @@ a{text-decoration: none;color:#FFE03F;}
     .phone{
         font-size: 19px;
         padding: 1.5em;
+        text-align: right;
+        line-height: 11px;
     }
-
+        .contact-us{
+            font-size: 11px;
+            text-align: right;
+        }
     .pure-menu-heading{
         margin: -18px 0 0 9px !important;
         padding: 0 1.5em !important;
@@ -53,11 +66,16 @@ a{text-decoration: none;color:#FFE03F;}
 
     .header .pure-menu {
         padding: 1.5em;
-        background: #3291d2 url(https://googledrive.com/host/0B9LVk4xbDIJTMnlQWjZ1TGMxQWs/header-bg_ssit.png);
+        /*background: #3291d2 url(https://googledrive.com/host/0B9LVk4xbDIJTMnlQWjZ1TGMxQWs/header-bg_ssit.png);*/
         color:#fff;
         height:77px;
+        background: #1A1E43;
+        opacity: 0.8;
+        border-bottom: none !important;
     }
-
+    .header .pure-menu:hover{
+        opacity: 1;
+    }
         .header .pure-menu li a{
             color:#fff;
             border-right:1px solid rgba(60, 172, 236, 0.75);
@@ -79,7 +97,7 @@ body .primary-button {
     top: 0;
     width: 100%;
     height: 500px;
-    margin: 125px auto 0;
+    margin: 1px auto 0;
     position: absolute;
     padding: 3px 0.5em 0;
     background: #08080c url(https://googledrive.com/host/0B9LVk4xbDIJTMnlQWjZ1TGMxQWs/slider1_ssit.jpg) center no-repeat;
@@ -99,33 +117,61 @@ body .primary-button {
         line-height: 1.4em;
     }
     .splash .splash-button {
-        color:#000;
-        font-size: 202%;
+        color:#fafafa;
+        font-size: 144%;
         margin: 11px 0 0;
+        padding: 17px 71px;
         font-weight: normal;
-        background: #FFE03F;
+        /*background: #FFE03F;*/
+background-color: #ff9200;
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.1,#ffba00),color-stop(1,#ff9200));
+background-image: -webkit-linear-gradient(top,#ffba00 10%,#ff9200 100%);
+background-image: -moz-linear-gradient(top,#ffba00 10%,#ff9200 100%);
+background-image: -o-linear-gradient(top,#ffba00 10%,#ff9200 100%);
+background-image: -ms-linear-gradient(top,#ffba00 10%,#ff9200 100%);
+background-image: linear-gradient(top,#ffba00 10%,#ff9200 100%);
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0 2px 0 #b86900;
+box-shadow: 0 2px 0 #b86900;
+text-shadow: 0 -1px 0 #dc8100;
+text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
-        box-shadow: 1px 3px 3px rgba(0,0,0,0.3);
+        /*box-shadow: 1px 3px 3px rgba(0,0,0,0.3);*/
     }
     .splash .splash-button:hover{
-        background: #fff;
-        box-shadow: 1px 2px 2px rgba(255,255,255,0.4);
+        color:#fff;
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.1,#ffba00),color-stop(1,#d27901));
+background-image: -webkit-linear-gradient(top,#ffba00 10%,#d27901 100%);
+background-image: -moz-linear-gradient(top,#ffba00 10%,#d27901 100%);
+background-image: -o-linear-gradient(top,#ffba00 10%,#d27901 100%);
+background-image: -ms-linear-gradient(top,#ffba00 10%,#d27901 100%);
+background-image: linear-gradient(top,#ffba00 10%,#d27901 100%);
+-webkit-box-shadow: 0 2px 0 #894e00;
+box-shadow: 0 2px 0 #894e00;
+color: #fff!important;
+text-shadow: 0 -2px 0 #dc8100;
+        /*box-shadow: 1px 2px 2px rgba(255,255,255,0.4);*/
     }
     .splash .splash-button:active{
-        opacity: 0.33;
-        box-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+        color:#fdfdfd;
+        margin:12px 0 0;
+        -webkit-box-shadow: 0 1px 0 #894e00;
+        box-shadow: 0 1px 0 #894e00;
+        text-shadow: 0 -1px 0 #dc8100;
+       /* box-shadow: 1px 1px 1px rgba(255,255,255,0.3);*/
     }
     .splash .copy{
         margin: 0 3em;
     }
     .splash .splash-text{
-        margin: 141px auto;
+        margin: 212px auto 0;
     }
 
 .main{
     text-align: center;
     padding: 19px 0 0;
-    margin: 629px auto 0;
+    margin: 507px auto 0;
 }
 
 .content .content-subhead {
@@ -143,9 +189,6 @@ body .primary-button {
 }
     .second-section .pure-u-1-3{
         border-bottom: 16px solid #bdc3c7; 
-    }
-    .second-section .pure-u-1-3:first-child{
-        border-bottom: 16px solid #2980b9;
     }
     .second-section .l-box{
         padding: 1em 1em 0.6em;
@@ -171,7 +214,7 @@ body .primary-button {
     color:#959595;
 }
     .welcome h1 span{
-        color: #2980b9;
+        color: #FFE03F;
     }
     .welcome p{
         color:#959595;
@@ -216,6 +259,43 @@ body .primary-button {
     .my-section-vert{padding:10px;}
 /* YUI-MODULE-ACCORDION end */
 
+@-webkit-keyframes rotate {
+  from {
+    trasform: rotate(0deg);
+    transform-origin:50% 50%;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -ms-transform-origin:50% 50%;
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin:50% 50%;
+  }
+  to { 
+    trasform: rotate(360deg);
+    transform-origin:50% 50%;
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -ms-transform-origin:50% 50%;
+    -webkit-transform: rotate(360deg);
+    -webkit-transform-origin:50% 50%;
+  }
+}
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+.path-over{
+    fill: '#F0CB0F';
+    opacity: 0.8;
+    '-webkit-animation-name': 'rotate',;
+    '-webkit-animation-duration': '3.77s'; 
+    '-webkit-animation-iteration-count':  'infinite';
+    '-webkit-animation-timing-function': 'linear';
+}
+.path-off{
+    fill: 'midnightblue';
+    opacity: 1;
+}
 .footer {
     background: #111;
     color: #666;

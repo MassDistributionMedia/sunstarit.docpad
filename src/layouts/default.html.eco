@@ -32,6 +32,13 @@
 	<!--[if lt IE 9]>
 		<script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<!--[if gte IE 9]>
+	  <style type="text/css">
+	    .gradient {
+	       filter: none;
+	    }
+	  </style>
+	<![endif]-->
 
 	<!-- Styles -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
@@ -114,7 +121,7 @@
 			</g>
 			</svg>
 			</a>
-			<span class="right phone">CALL US: 1-800-55-SUNIT</span>
+			<span class="right phone"> 1-800-55-SUNIT<br/><span class="contact-us">Contact Us</span></span>
 			<ul class="head-nav right">
 				<li class="pure-menu-selected"><a href="/"><%- @getIconmonstrBlock('globe','fill:#fff','iconmonstr-head-nav') %> <span class="block">Home</span></a></li>
 				<% for document in @getCollection('pages').toJSON(): %>
