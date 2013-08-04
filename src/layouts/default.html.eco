@@ -53,7 +53,7 @@
 <!-- Markup -->
 <div class="content pure-g-r">
 	<div class="header pure-u-1">
-		<div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
+		<div id="main-header"class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
 			<a class="pure-menu-heading" href="/">
 			<svg version="1.1" id="logoSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="192.568px" height="112.162px" viewBox="0 0 192.568 112.162" enable-background="new 0 0 192.568 112.162"
@@ -121,12 +121,12 @@
 			</g>
 			</svg>
 			</a>
-			<span class="right phone"> 1-800-55-SUNIT<br/><span class="contact-us">Contact Us</span></span>
-			<ul class="head-nav right">
-				<li class="pure-menu-selected"><a href="/"><%- @getIconmonstrBlock('globe','fill:#fff','iconmonstr-head-nav') %> <span class="block">Home</span></a></li>
+			<span id="phone" class="right"> 1-800-55-SUNIT<br/><span class="contact-us">Contact Us</span></span>
+			<ul id="head-nav"class="head-nav right">
+				<li class="pure-menu-selected"><a href="/"><%- @getIconmonstrBlock('globe','iconmonstrNav','iconmonstr-head-nav') %> <span class="block">Home</span></a></li>
 				<% for document in @getCollection('pages').toJSON(): %>
 					<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
-						<a href="<%= document.url %>" property="dc:title"> <%- @getIconmonstrBlock(document.iconmonstr,'fill:orange','iconmonstr-head-nav') %> <span class="block"><%= document.title %></span></a>
+						<a href="<%= document.url %>" property="dc:title"><%- @getIconmonstrBlock(document.iconmonstr,'iconmonstrNav','iconmonstr-head-nav') %> <span class="block"><%= document.title %></span></a>
 					</li>
 				<% end %>
 			</ul>

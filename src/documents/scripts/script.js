@@ -7,20 +7,6 @@ YUI({
 	'node-focusmanager','node','event',
 function(Y)
 {
-	Y.all('.main .l-box').on({
-		mouseover: function(){
-			Y.one('#Shape_8 path').addClass('path-over');
-			Y.one('#Shape_8 path').removeClass('path-off');
-			Y.one('.second-section .pure-u-1-3').setStyle('border-bottom','16px solid rgba(25, 25, 112, 0.8)');
-			Y.one('#Shape_8 path').removeClass('notransition');
-		},
-		mouseout: function(){
-			Y.one('#Shape_8 path').removeClass('path-over');
-			Y.one('#Shape_8 path').addClass('path-off');
-			Y.one('.second-section .pure-u-1-3').setStyle('border-bottom','16px solid #bdc3c7');
-			Y.one('#Shape_8 path').addClass('notransition');
-		}
-	});
 
 	function onTitleClicked(e, a)
 	{
@@ -35,12 +21,16 @@ function(Y)
 	function updateFocusMgr()
 	{
 		var a    = this;
+		var keys = a.get('horizontal') ?
+			{ next: "down:39", previous: "down:37" } :
+			{ next: "down:40", previous: "down:38" };
 
 		var node = a.get('contentBox');
 		node.unplug(Y.Plugin.NodeFocusManager);
 		node.plug(Y.Plugin.NodeFocusManager,
 		{
 			descendants: '.yui3-accordion-title a',
+			keys:        keys,
 			circular:    false,
 			focusClass:
 			{
@@ -53,7 +43,7 @@ function(Y)
 		});
 	}
 
-	// create accordions
+	// create accordion
 
 	var vm = new Y.Accordion(
 	{
@@ -63,59 +53,61 @@ function(Y)
 		allowMultipleOpen:       true
 	});
 
-	var accordions = [ vm ];
-
 	Y.on('domready', function()
 	{
 		vm.render('#accordion-test-vert-markup');
 		Y.delegate('click', onTitleClicked, '#accordion-test-vert-markup', '.my-title-vert', null, vm);
 
-		Y.each(accordions, function(a)
-		{
-			updateFocusMgr.call(a);
+		updateFocusMgr.call(vm);
 
-			a.on('insert', function()
-			{
-				Y.later(1, this, updateFocusMgr);
-			});
-			a.on('remove', updateFocusMgr);
+		vm.on('insert', function()
+		{
+			Y.later(1, this, updateFocusMgr);
+		});
+		vm.on('remove', updateFocusMgr);
+
+		Y.one('.vision-vert').ancestor().addClass('vision-title');
+		Y.one('.vision-inner').ancestor().addClass('vision-title');
+		Y.one('.mission-vert').ancestor().addClass('mission-title');
+		Y.one('.mission-inner').ancestor().addClass('mission-title');
+
+		Y.all('.main .l-box').on({
+			mouseover: function(){
+				Y.one('#Shape_8 path').addClass('path-over');
+				Y.one('#Shape_8 path').removeClass('path-off');
+				Y.one('.second-section .pure-u-1-3').addClass('second-over');
+				Y.one('#Shape_8 path').removeClass('notransition');
+			},
+			mouseout: function(){
+				Y.one('#Shape_8 path').removeClass('path-over');
+				Y.one('#Shape_8 path').addClass('path-off');
+				Y.one('.second-section .pure-u-1-3').removeClass('second-over');
+				Y.one('#Shape_8 path').addClass('notransition');
+			}
 		});
 	});
 
-	// test inserting sections
-
-	var count = 6;
-
-	function addSectionHandlers(
-		/* object */	a,
-		/* object */	s)
-	{
-		Y.on('click', function(type, a, el)
-		{
-			var i = a.findSection(el);
-			if (i >= 0)
-			{
-				a.removeSection(i);
-			}
-		},
-		s.content, null, a, s.content);
-	};
-
-	function insertVertSection(
-		/* accordion */	obj,
-		/* string */	c1,
-		/* string */	c2)
-	{
-		count++;
-
-		var s = obj.insertSection(1, '<div class="'+c1+'"><a href="javascript:void(0);">#'+count+'</a></div>',
-								  '<div class="'+c2+'"><p>inserted content #'+count+'<br>click to delete</p></div>');
-		addSectionHandlers(obj, s);
-	};
-
-	Y.on('click', function()
-	{
-		insertVertSection(vm, 'my-title-vert', 'my-section-vert');
-	},
-	'#insert-section');
 });
+
+function scrolledPast(){
+	document.getElementById('main-header').classList.add('main-header-scrolled');
+	document.getElementById('iconmonstrNav').classList.add('iconmonstr-head-nav-scrolled');
+	document.getElementById('phone').classList.add('phone-scrolled');
+	document.getElementById('head-nav').classList.add('head-nav-scrolled');
+	document.getElementById('logoSVG').classList.add('logoSVG-scrolled');
+}
+
+function scrolledTop(){
+	document.getElementById('main-header').classList.remove('main-header-scrolled');
+	document.getElementById('iconmonstrNav').classList.remove('iconmonstr-head-nav-scrolled');
+	document.getElementById('phone').classList.remove('phone-scrolled');
+	document.getElementById('head-nav').classList.remove('head-nav-scrolled');
+	document.getElementById('logoSVG').classList.remove('logoSVG-scrolled');
+}
+
+window.onscroll = function(){
+	document.documentElement.scrollTop || document.body.scrollTop > 111 ?
+		scrolledPast()
+
+		: scrolledTop();
+}
