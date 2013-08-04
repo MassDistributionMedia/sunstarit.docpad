@@ -7,10 +7,9 @@ body {
 
 a{text-decoration: none;color:#FFE03F;}
 
-::-webkit-scrollbar{width:17px;background:#fff;}
+::-webkit-scrollbar{width:17px;background:rgba(102,51,0,0.2) url(https://googledrive.com/host/0B9LVk4xbDIJTMnlQWjZ1TGMxQWs/second_section-bg.jpg);}
 ::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
-::-webkit-scrollbar-thumb{background:rgba(102,51,0,0.2);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
-::-webkit-scrollbar-thumb:window-inactive{background:rgba(216,210,206,0.3);}
+::-webkit-scrollbar-thumb{background:#1A1E43 url(https://googledrive.com/host/0B9LVk4xbDIJTb3UtNVVnWFg3WGs/use_your_illusion_alpha91.png);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.2);}
 
 .l-box {
     padding: 1em;
@@ -86,7 +85,6 @@ a{text-decoration: none;color:#FFE03F;}
         .header .pure-menu li a:hover,
         .header .pure-menu li a:focus {
             background: none;
-            border: none;
             color: #aaa;
         }
 
@@ -272,9 +270,10 @@ text-shadow: 0 -2px 0 #dc8100;
     .my-title-vert{padding: 13px 0}
     .vision-vert{background-color:rgba(236, 199, 3, 0.3);} /* #2980b9 */
     .mission-vert{background-color:rgba(248, 212, 25, 0.45);} /* #3498db */
-    .job-vert{background-color:#FFE03F;} /* #3aa8f2 */   
+    .job-vert{background:rgba(255, 224, 63, 0.71)} /* #3aa8f2 */   
     .vision-title{background: url(https://googledrive.com/host/0B9LVk4xbDIJTb3UtNVVnWFg3WGs/cubes_@2X_darker-yellow.png);} 
     .mission-title{background:url(https://googledrive.com/host/0B9LVk4xbDIJTb3UtNVVnWFg3WGs/gplaypattern_@2X_yellow.jpg);}
+    .job-title{background: url(https://googledrive.com/host/0B9LVk4xbDIJTb3UtNVVnWFg3WGs/escheresque_ste_@2X_yellow.gif);}
     .my-title-vert a {display:block;text-align:center;cursor:pointer;}
     .my-title-vert a {padding:4px 0;}
     .my-title-vert a:focus
@@ -333,8 +332,14 @@ text-shadow: 0 -2px 0 #dc8100;
 .logoSVG-scrolled{
     margin-top: -62px;
 }
+.get-started .pure-u-1{
+    background:url(https://googledrive.com/host/0B9LVk4xbDIJTU0FvQll6RWlCNnM/honey_im_subtle_@2X.png);
+}
+.get-started .ribbon{
+    background:rgba(255, 255, 255, 0.68);
+}
 .footer {
-    background: #111;
+    background: #222 url(https://googledrive.com/host/0B9LVk4xbDIJTU0FvQll6RWlCNnM/hexabump.png);
     color: #666;
     text-align: center;
     padding: 1em;

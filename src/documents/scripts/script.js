@@ -70,6 +70,8 @@ function(Y)
 		Y.one('.vision-inner').ancestor().addClass('vision-title');
 		Y.one('.mission-vert').ancestor().addClass('mission-title');
 		Y.one('.mission-inner').ancestor().addClass('mission-title');
+		Y.one('.job-vert').ancestor().addClass('job-title');
+		Y.one('.job-inner').ancestor().addClass('job-title');
 
 		Y.all('.main .l-box').on({
 			mouseover: function(){
