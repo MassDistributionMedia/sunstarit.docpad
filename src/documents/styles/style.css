@@ -213,6 +213,10 @@ text-shadow: 0 -2px 0 #dc8100;
     .second-section p{
         color:#919191;
     }
+.final-section{
+    text-align: center;
+    margin: 77px 0;
+}
 
 .welcome{
     background: url(https://googledrive.com/host/0B9LVk4xbDIJTU0FvQll6RWlCNnM/honey_im_subtle_@2X.png);
