@@ -8,6 +8,28 @@ YUI({
 function(Y)
 {
 
+	function scrolledPast(){
+		Y.all('#main-header').addClass('main-header-scrolled');
+		Y.all('.iconmonstr-head-nav').addClass('iconmonstr-head-nav-scrolled');
+		Y.all('#phone').addClass('phone-scrolled');
+		Y.all('#head-nav').addClass('head-nav-scrolled');
+		Y.all('#logoSVG').addClass('logoSVG-scrolled');
+	}
+
+	function scrolledTop(){
+		Y.all('#main-header').removeClass('main-header-scrolled');
+		Y.all('.iconmonstr-head-nav').removeClass('iconmonstr-head-nav-scrolled');
+		Y.all('#phone').removeClass('phone-scrolled');
+		Y.all('#head-nav').removeClass('head-nav-scrolled');
+		Y.all('#logoSVG').removeClass('logoSVG-scrolled');
+	}
+
+	Y.on('scroll', function(){
+		document.documentElement.scrollTop || document.body.scrollTop > 111 ?
+			scrolledPast()
+			: scrolledTop();
+	});
+
 	function onTitleClicked(e, a)
 	{
 		var t = e.target;
@@ -90,26 +112,3 @@ function(Y)
 	});
 
 });
-
-function scrolledPast(){
-	document.getElementById('main-header').classList.add('main-header-scrolled');
-	document.getElementById('iconmonstrNav').classList.add('iconmonstr-head-nav-scrolled');
-	document.getElementById('phone').classList.add('phone-scrolled');
-	document.getElementById('head-nav').classList.add('head-nav-scrolled');
-	document.getElementById('logoSVG').classList.add('logoSVG-scrolled');
-}
-
-function scrolledTop(){
-	document.getElementById('main-header').classList.remove('main-header-scrolled');
-	document.getElementById('iconmonstrNav').classList.remove('iconmonstr-head-nav-scrolled');
-	document.getElementById('phone').classList.remove('phone-scrolled');
-	document.getElementById('head-nav').classList.remove('head-nav-scrolled');
-	document.getElementById('logoSVG').classList.remove('logoSVG-scrolled');
-}
-
-window.onscroll = function(){
-	document.documentElement.scrollTop || document.body.scrollTop > 111 ?
-		scrolledPast()
-
-		: scrolledTop();
-}
