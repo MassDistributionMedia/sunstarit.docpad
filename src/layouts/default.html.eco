@@ -40,8 +40,6 @@
 	  </style>
 	<![endif]-->
 
-	<script type="text/javascript" src="http://yui.yahooapis.com/3.11.0/build/yui/yui-min.js"></script>
-	<script type="text/javascript" src="scripts/script.js"></script>
 	<!-- Styles -->
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 </head>
@@ -51,8 +49,8 @@
 <div class="content pure-g-r">
 	<div class="header pure-u-1">
 		<div id="main-header"class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
-			<a class="pure-menu-heading" href="/">
-			<svg version="1.1" id="logoSVG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			<a id="logoSVG" class="pure-menu-heading" href="/">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="192.568px" height="112.162px" viewBox="0 0 192.568 112.162" enable-background="new 0 0 192.568 112.162"
 	 xml:space="preserve">
 			<g>
@@ -122,7 +120,7 @@
 			<ul id="head-nav"class="head-nav right">
 				<% for document in @getCollection('pages').toJSON(): %>
 					<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
-						<a href="<%= document.url %>" property="dc:title"><%- @getIconmonstrBlock(document.iconmonstr,'iconmonstrNav','iconmonstr-head-nav') %> <span class="block"><%= document.title %></span></a>
+						<a id="iconmonstrNav" href="<%= document.url %>" property="dc:title"><%- @getIconmonstrBlock(document.iconmonstr,'iNav','iconmonstr-head-nav') %> <span class="block"><%= document.title %></span></a>
 					</li>
 				<% end %>
 			</ul>
@@ -139,5 +137,10 @@
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="http://yui.yahooapis.com/3.11.0/build/yui/yui-min.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+
 </body>
 </html>

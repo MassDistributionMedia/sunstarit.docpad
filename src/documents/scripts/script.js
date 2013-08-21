@@ -10,7 +10,7 @@ function(Y)
 
 	function scrolledPast(){
 		Y.all('#main-header').addClass('main-header-scrolled');
-		Y.all('.iconmonstr-head-nav').addClass('iconmonstr-head-nav-scrolled');
+		Y.all('#iconmonstrNav > svg').addClass('iconmonstr-head-nav-scrolled');
 		Y.all('#phone').addClass('phone-scrolled');
 		Y.all('#head-nav').addClass('head-nav-scrolled');
 		Y.all('#logoSVG').addClass('logoSVG-scrolled');
@@ -18,17 +18,32 @@ function(Y)
 
 	function scrolledTop(){
 		Y.all('#main-header').removeClass('main-header-scrolled');
-		Y.all('.iconmonstr-head-nav').removeClass('iconmonstr-head-nav-scrolled');
+		Y.all('#iconmonstrNav > svg').removeClass('iconmonstr-head-nav-scrolled');
 		Y.all('#phone').removeClass('phone-scrolled');
 		Y.all('#head-nav').removeClass('head-nav-scrolled');
 		Y.all('#logoSVG').removeClass('logoSVG-scrolled');
 	}
 
-	Y.on('scroll', function(){
-		document.documentElement.scrollTop || document.body.scrollTop > 111 ?
-			scrolledPast()
-			: scrolledTop();
-	});
+	var toggy = 0;
+	function toggyZero(){
+		toggy = 0;
+		return toggy;
+	}
+	function toggyOne(){
+		toggy = 1;
+		return toggy;
+	}
+	document.getElementById('main-header').onmouseover = toggyOne;
+	document.getElementById('main-header').onmouseout = toggyZero;
+
+	if(toggy === 0){
+		Y.on('scroll', function(){
+			document.documentElement.scrollTop || document.body.scrollTop > 111 ?
+				scrolledPast()
+				: scrolledTop();
+		});
+	}
+
 
 	function onTitleClicked(e, a)
 	{
