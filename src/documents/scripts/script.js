@@ -33,17 +33,15 @@ function(Y)
 		toggy = 1;
 		return toggy;
 	}
+		
 	document.getElementById('main-header').onmouseover = toggyOne;
 	document.getElementById('main-header').onmouseout = toggyZero;
 
-	if(toggy === 0){
 		Y.on('scroll', function(){
-			document.documentElement.scrollTop || document.body.scrollTop > 111 ?
+			toggy === 0 && document.documentElement.scrollTop || document.body.scrollTop > 111 ?
 				scrolledPast()
 				: scrolledTop();
 		});
-	}
-
 
 	function onTitleClicked(e, a)
 	{
