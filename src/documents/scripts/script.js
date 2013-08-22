@@ -24,24 +24,16 @@ function(Y)
 		Y.all('#logoSVG').removeClass('logoSVG-scrolled');
 	}
 
-	var toggy = 0;
-	function toggyZero(){
-		toggy = 0;
-		return toggy;
-	}
-	function toggyOne(){
-		toggy = 1;
-		return toggy;
-	}
-		
-	document.getElementById('main-header').onmouseover = toggyOne;
-	document.getElementById('main-header').onmouseout = toggyZero;
+	Y.one('#main-header').on({
+		mouseover : function(){ if(document.body.scrollTop > 111) scrolledTop();},
+		mouseout  : function(){ if(document.body.scrollTop > 111) scrolledPast();}
+	});
 
-		Y.on('scroll', function(){
-			toggy === 0 && document.documentElement.scrollTop || document.body.scrollTop > 111 ?
-				scrolledPast()
-				: scrolledTop();
-		});
+	Y.on('scroll', function(){
+		document.documentElement.scrollTop || document.body.scrollTop < 111 ?
+			scrolledTop()
+		:   scrolledPast();
+	});
 
 	function onTitleClicked(e, a)
 	{
