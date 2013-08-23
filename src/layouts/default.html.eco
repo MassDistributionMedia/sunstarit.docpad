@@ -129,18 +129,62 @@
 
 	<%- @content %>
 
+	<div class="pre-footer">
+		<div class="pure-g-r">
+			<div id="footPin" class="pure-u-1-3">
+				<span>
+					<%- @getIconmonstrBlock('location16','footPin16') %>
+					<%- @getIconmonstrBlock('location15','footPin15') %>
+					 Address Goes Here</span>
+			</div>
+			<div id="footCall" class="pure-u-1-3">
+				<span>
+					<%- @getIconmonstrBlock('phone','footPhone') %>
+					<%- @getIconmonstrBlock('phone5','footPhone5') %>
+					 Address Goes Here
+				</span>
+			</div>
+			<div id="footMail" class="pure-u-1-3">
+				<span>
+					<%- @getIconmonstrBlock('email','footEmail') %>
+					<%- @getIconmonstrBlock('email8','footEmail8') %>
+					 Address Goes Here
+				</span>
+			</div>
+		</div>
+		<hr/>
+		<div class="pure-g-r">
+			<div class="pure-u-1-2">
+				<h4>COPYRIGHT SUN STAR IT. ALL RIGHTS RESERVED.</h4>
+			</div>
+			<div class="pure-u-1-2 social-icons">
+				<a id="twIcon" href="">
+					<%- @getIconmonstrBlock('twitter4','footTwitter4') %>
+					<%- @getIconmonstrBlock('twitter5','footTwitter5') %>
+				</a>
+				<a id="fbIcon" href="">
+					<%- @getIconmonstrBlock('facebook4','footFacebook4') %>
+					<%- @getIconmonstrBlock('facebook5','footFacebook5') %>
+				</a>
+				<a id="gpIcon" href="">
+					<%- @getIconmonstrBlock('googleplus4','footGplus4') %>
+					<%- @getIconmonstrBlock('googleplus5','footGplus5') %>
+				</a>
+				<a id="inIcon" href="">
+					<%- @getIconmonstrBlock('linkedin4','footLinkedin4') %>
+					<%- @getIconmonstrBlock('linkedin5','footLinkedin5') %>
+				</a>
+			</div>
+		</div>
+	</div>
 	<div class="footer pure-u-1">
-		&copy;<%- (new Date()).getFullYear() %> SUN STAR IT.
-		updated <%= @site.date.toISOString() %>
+		&copy;<%- (new Date()).getFullYear() %>.
+		Last updated <%= @site.date.toISOString() %>.
 	</div>
 </div>
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
-
-	<!-- Scripts -->
-	<script type="text/javascript" src="http://yui.yahooapis.com/3.11.0/build/yui/yui-min.js"></script>
-	<script type="text/javascript" src="scripts/script.js"></script>
 
 </body>
 </html>

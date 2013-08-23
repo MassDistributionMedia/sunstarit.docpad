@@ -48,8 +48,8 @@ docpadConfig = {
 
 			# Scripts
 			scripts: [
-			#	"http://yui.yahooapis.com/3.11.0/build/yui/yui-min.js"
-			#	"scripts/script.js"
+				"http://yui.yahooapis.com/3.11.0/build/yui/yui-min.js"
+				"scripts/script.js"
 			]
 
 

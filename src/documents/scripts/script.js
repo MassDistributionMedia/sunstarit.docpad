@@ -7,7 +7,6 @@ YUI({
 	'node-focusmanager','node','event',
 function(Y)
 {
-
 	function scrolledPast(){
 		Y.all('#main-header').addClass('main-header-scrolled');
 		Y.all('#iconmonstrNav > svg').addClass('iconmonstr-head-nav-scrolled');
@@ -35,6 +34,7 @@ function(Y)
 		:   scrolledPast();
 	});
 
+	// accordion starts
 	function onTitleClicked(e, a)
 	{
 		var t = e.target;
@@ -70,8 +70,6 @@ function(Y)
 		});
 	}
 
-	// create accordion
-
 	var vm = new Y.Accordion(
 	{
 		srcNode: '#accordion-test-vert-markup-content',
@@ -99,21 +97,52 @@ function(Y)
 		Y.one('.mission-inner').ancestor().addClass('mission-title');
 		Y.one('.job-vert').ancestor().addClass('job-title');
 		Y.one('.job-inner').ancestor().addClass('job-title');
+		// accordion end
 
-		Y.all('.main .l-box').on({
-			mouseover: function(){
-				Y.one('#Shape_8 path').addClass('path-over');
-				Y.one('#Shape_8 path').removeClass('path-off');
-				Y.one('.second-section .pure-u-1-3').addClass('second-over');
-				Y.one('#Shape_8 path').removeClass('notransition');
-			},
-			mouseout: function(){
-				Y.one('#Shape_8 path').removeClass('path-over');
-				Y.one('#Shape_8 path').addClass('path-off');
-				Y.one('.second-section .pure-u-1-3').removeClass('second-over');
-				Y.one('#Shape_8 path').addClass('notransition');
-			}
-		});
+		function secondHover(hoverElm,shape,third){
+			Y.one(hoverElm).on({
+				mouseover: function(){
+					Y.all(third).addClass('second-over');
+					Y.all(shape).setStyles({
+						'-webkit-animation-name': 'rotate',
+    					'-webkit-animation-duration': '3.77s', 
+    					'-webkit-animation-iteration-count': 'infinite',
+    					'-webkit-animation-timing-function': 'linear'
+					});
+				},
+				mouseout: function(){
+					Y.all(third).removeClass('second-over');
+					Y.all(shape).setStyle('-webkit-animation-name', 'auto');					
+				}
+			});
+		}
+
+		secondHover('#techRec','#techPath','#techThird');
+		secondHover('#devOut','#devPath','#devThird');
+		secondHover('#projMan','#projPath','#projThird');
+
+		function iconHover(hoverElm, icon1, icon2){
+			Y.one(icon1).hide();	
+			Y.one(hoverElm).on({
+				mouseover : function(){
+					Y.one(icon2).hide();
+					Y.one(icon1).show();	
+				},
+				mouseout  : function(){
+					Y.one(icon2).show();
+					Y.one(icon1).hide();
+				}
+			});	
+		}
+
+		iconHover('#footPin','#footPin15','#footPin16');
+		iconHover('#footCall','#footPhone5','#footPhone');
+		iconHover('#footMail','#footEmail8','#footEmail');
+		iconHover('#twIcon','#footTwitter5','#footTwitter4');
+		iconHover('#fbIcon','#footFacebook5','#footFacebook4');
+		iconHover('#gpIcon','#footGplus5','#footGplus4');
+		iconHover('#inIcon','#footLinkedin5','#footLinkedin4');
+	
 	});
 
 });
