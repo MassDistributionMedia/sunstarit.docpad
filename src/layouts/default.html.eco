@@ -124,6 +124,13 @@
 					</li>
 				<% end %>
 			</ul>
+			<select id="mobileNav"> 
+			    <% for document in @getCollection('pages').toJSON(): %>
+					<option id="iconmonstrNav" value="<%= document.url %>" property="dc:title"><%- @getIconmonstrBlock(document.iconmonstr,'iNav','iconmonstr-head-nav') %> 
+						<%= document.title %>
+					</option>
+				<% end %>
+			</select> 
 		</div>
 	</div>
 
