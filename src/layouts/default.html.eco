@@ -192,6 +192,9 @@
 
 	<!-- Scripts -->
 	<%- @getBlock('scripts').add(@site.scripts).toHTML() %>
+	<% if @document.scripts: %> 
+    	<%- @getBlock('scripts').add(["/scripts/"+@document.scripts]).toHTML() %>
+	<% end %>
 
 </body>
 </html>

@@ -6,4 +6,26 @@ iconmonstr: location16
 pageOrder: 4
 ---
 
-<% %>
+
+
+<form action="/contact-form" method="POST">
+    <fieldset>
+        <legend>Contact form</legend>
+        <input type="hidden" name="redirect" value="<%- @document.url %>?formSent=1">
+        <p>
+            <label for="name">Name/Company</label><br/>
+            <input type="text" id="name" name="name" placeholder="Name/company" />
+        </p>
+        <p>
+            <label for="email">Email Address</label><br/>
+            <input type="email" id="email" name="email" placeholder="contact@me.com" />
+        </p>
+        <p>
+            <label for="message">Message Body</label><br/>
+            <textarea id="message" name="message" cols="100" rows="10" placeholder="Your message..."></textarea>
+        </p>
+        <p>
+            <button type="submit" value="Send" name="contact-send" id="contact-send">Send</button>
+        </p>
+    </fieldset>
+</form>

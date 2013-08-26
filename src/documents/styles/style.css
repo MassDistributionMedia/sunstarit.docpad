@@ -72,16 +72,12 @@ a{text-decoration: none;color:#FFE03F;}
     .header .pure-menu {
         color:#fff;
         height:77px;
-        opacity: 0.8;
         padding: 1.5em;
         border-bottom: none !important;
         /*background: #3291d2 url(https://googledrive.com/host/0B9LVk4xbDIJTMnlQWjZ1TGMxQWs/header-bg_ssit.png);*/
         background: #1A1E43 url(https://googledrive.com/host/0B9LVk4xbDIJTb3UtNVVnWFg3WGs/use_your_illusion_alpha91.png);
     }
-    .pure-menu ul{visibility: visible;}
-    .header .pure-menu:hover{
-        opacity: 1;
-    }
+        .pure-menu ul{visibility: visible;}
         .header .pure-menu li a{
             color:#fff;
             border-right:1px solid rgba(0, 66, 104, 0.75);
@@ -278,7 +274,10 @@ body .primary-button {
         display: inline;
         font-weight: normal;
     }
-
+.page{
+    margin: 222px 65px 111px;
+    letter-spacing: 1px;
+}
 .center-text{
     text-align: center;
 }
