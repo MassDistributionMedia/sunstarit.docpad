@@ -148,7 +148,7 @@
 				<span>
 					<%- @getIconmonstrBlock('phone','footPhone') %>
 					<%- @getIconmonstrBlock('phone5','footPhone5') %>
-					 Address Goes Here
+					 1-855-557-8648 Office <br> 1-855-557-7699 Fax
 				</span>
 			</div>
 			<div id="footMail" class="pure-u-1-3">
