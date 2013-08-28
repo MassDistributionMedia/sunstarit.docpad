@@ -81,7 +81,7 @@ published: true
                 </g>
                 <g id="Shape_12">
                     <g>
-                        <%- @getIconmonstrBlock('menu6','secIcon','second-section-icon') %>
+                        <%- @getIconmonstrBlock('menu6','secIcon','second-section-icon') %> 
                     </g>
                 </g>
                 </svg>
