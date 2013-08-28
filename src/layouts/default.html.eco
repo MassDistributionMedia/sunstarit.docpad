@@ -155,7 +155,7 @@
 				<span>
 					<%- @getIconmonstrBlock('email','footEmail') %>
 					<%- @getIconmonstrBlock('email8','footEmail8') %>
-					 Address Goes Here
+					 sales@sunstarit.com <br> jobs@sunstarit.com 
 				</span>
 			</div>
 		</div>
