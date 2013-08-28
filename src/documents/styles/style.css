@@ -58,8 +58,11 @@ a{text-decoration: none;color:#FFE03F;}
         padding: 1.5em;
         font-size: 19px;
         text-align: right;
-        line-height: 11px;
     }
+        #phone a{
+            color: #fff;
+            line-height: 11px;
+        }
         .contact-us{
             font-size: 11px;
             text-align: right;
@@ -359,7 +362,8 @@ body .primary-button {
     display: none;
 }
 .phone-scrolled{
-    margin-top: -5px;
+    margin-top: -13px;
+    margin-right: -16px;
     padding-top: 0 !important;
 }
 .head-nav-scrolled{

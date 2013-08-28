@@ -119,18 +119,24 @@ docpadConfig = {
 					next()
 
 
-    plugins:
-	    contactify:
-	        path: '/contact'
-	        transport: {
-	            service: 'Gmail',
-	            auth: {
-	                user: '',
-	                pass: ''
-	            }
-	        }
-	        redirect: '/'
-	        to: ''
+	plugins:
+		contactify:
+			path: '/contact'
+			transport: {
+				service: 'Gmail',
+				auth: {
+					user: 'mikeumus@gmail.com',
+					pass: 'testPass'
+				}
+			}
+			redirect: '/'
+			to: 'rob@sunstarit.com'
+
+	# Express' basicAuth
+	basicAuth:
+		protectedPage: '/'
+		user: 'Sunstarit'
+		pass: 'testPassSSIT2310'
 }
 
 

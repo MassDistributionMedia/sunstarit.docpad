@@ -116,7 +116,7 @@
 			</g>
 			</svg>
 			</a>
-			<span id="phone" class="right"> 1-800-55-SUNIT<br/><span class="contact-us">Contact Us</span></span>
+			<span id="phone" class="right"><a href="/pages/contact"> 1-800-55-SUNIT<br/><span class="contact-us">Contact Us</span></a></span>
 			<ul id="head-nav"class="head-nav right">
 				<% for document in @getCollection('pages').toJSON(): %>
 					<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">

@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "docpad": "~6.50.0",
-    "docpad-plugin-downloader": "~2.1.2",
     "docpad-plugin-cleanurls": "~2.5.1",
     "docpad-plugin-coffeescript": "~2.2.2",
     "docpad-plugin-eco": "~2.0.2",
@@ -41,6 +40,7 @@
     "docpad-plugin-text": "~2.3.0",
     "docpad-plugin-iconmonstr": "~2.0.11",
     "docpad-plugin-ghpages": "~2.3.0",
+    "docpad-plugin-basicauth": "~2.0.1",
     "docpad-plugin-contactify": "~2.0.7"
   },
   "devDependencies": {
