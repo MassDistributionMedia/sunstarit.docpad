@@ -1,7 +1,8 @@
 ---
-layout: 'default'
-title: 'Home'
+layout: default
+title: Home
 scripts: home.js
+published: true
 ---
 
 <!-- Main hero unit for a primary marketing message or call to action -->
@@ -13,7 +14,7 @@ scripts: home.js
                         The new approach to modern Information Technology Consultancy.
                     </h1>
                     <p>
-                        <span id="sloganSentence">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu dapibus metus. Nullam.</span><br/>
+                       
                         <a href="#" class="pure-button splash-button btn-big"><span></span><span>FIND OUT MORE</span></a>
                     </p>
                 </div>
