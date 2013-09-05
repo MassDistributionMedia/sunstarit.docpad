@@ -242,7 +242,7 @@ body .primary-button {
     background: url(https://googledrive.com/host/0B9LVk4xbDIJTU0FvQll6RWlCNnM/honey_im_subtle_@2X.png);
     margin: -32px 0 0 0;
 }
-    .welcome h1{
+    .welcome h1, .welcome h2, .welcome h3{
         color:#959595;
         font-size: 44px;
         font-weight: 400;
