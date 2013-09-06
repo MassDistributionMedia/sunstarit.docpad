@@ -106,6 +106,7 @@ published: true
                     <li>
                         <div class="my-title-vert vision-vert"><a href="javascript:void(0);"><h1>Technical Consultants ></h1></a></div>
                         <div class="my-section-vert vision-vert vision-inner">
+                            <!--
                             <span>
                             <ul>
                                 <li>Candidate Database</li>
@@ -114,11 +115,12 @@ published: true
                                 <li>Personal Communication</li>
                             </ul>
                             </span>
+                            -->
                         </div>
                     </li>
                     <li>
                         <div class="my-title-vert mission-vert"><a href="javascript:void(0);"><h1>IT Professional Network ></h1></a></div>
-                        <div class="my-section-vert mission-vert mission-inner"><p>SunStarIT uses a broad network of partners to provide expertise everytime.</p></div>
+                        <div class="my-section-vert mission-vert mission-inner"><p>SunStarIT uses a broad network of partners to provide expertise everytime. We continually grow our partnerships and welcome the opportunity to explore new business relationships. To learn more of the benefits of partnering with SunStarIT, please visit out <a class="color-blue" href="/pages/contact">contact page</a> or email <a class="color-blue" href="mailto:jobs@sales.com">sales@sunstartit.com</a></p></div>
                     </li>
                     <li>
                         <div class="my-title-vert job-vert"><a href="javascript:void(0);">
@@ -128,7 +130,7 @@ published: true
                             SunStarIT helps IT professionals find careers.
                             We can help enhance your career, working one on one with you to ensure your needs are met. 
                             <h3>We place candidates in all parts of Software Development Cycle with many different companies and industries. Will work directly with a person to understand needs. Our team works together utilizing technology tools/systems and personal networks to ensure results.</h3>
-                            See positions below and send your resume to <a class="color-white" href="mailto:jobs@sales.com">jobs@sunstarit.com</a> so we can introduce you to your career agent and make job reccomendations.
+                            See positions below and send your resume to <a class="color-blue" href="mailto:jobs@sales.com">jobs@sunstarit.com</a> so we can introduce you to your career agent and make job reccomendations.
                             <br/><br/>
                             <ul class="left clear-none">
                                 <strong>General Careers</strong>
@@ -138,7 +140,7 @@ published: true
                                 <li>Technical Architects</li>
                                 <li>Systems Analysts</li>
                                 <li>Software Developers</li>
-                                <li>Red Hat, UNIX, Solaris</li>
+                                <li>Red Hat, Linux, Solaris</li>
                                 <li>Front-End UI Developers</li>
                                 <li>C C++ Developers</li>
                                 <li>Java Developers</li>
@@ -146,7 +148,7 @@ published: true
                                 <li>Software testers</li>
                                 <li>Database Developers</li>
                                 <li>Administration and Support</li>
-                                <li>Network / Database Admins</li>
+                                <li>Network / Database Administrators</li>
                             </ul>
                             <iframe class="right career-sheet" src="https://docs.google.com/spreadsheet/pub?key=0Ai2uvEsmEAPadHBFTWhWdTZ5MnRTQUNwNkxKbmtzUEE&single=true&gid=0&output=html" width="707px" height="434px"> </iframe>
                         </div>

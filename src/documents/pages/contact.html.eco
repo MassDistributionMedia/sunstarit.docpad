@@ -14,7 +14,7 @@ pageOrder: 3
 
 <br/><br/>
 Please fill out the form below for questions and inquiries. <br/>
-<sup>For career opportunities include resume.</sup> <br/><br/>
+<sup>For career opportunities send resume to <a class="color-blue" href="mailto:jobs@sunstarit.com">jobs@sunstarit.com</a></sup> <br/><br/>
 <form action="/contact-form" method="POST">
     <fieldset>
         <legend>Contact form</legend>
