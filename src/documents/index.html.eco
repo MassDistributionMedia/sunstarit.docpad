@@ -91,7 +91,7 @@ published: true
         </div>
         </div>
 
-        <div class="pure-g-r content-ribbon welcome">
+        <div id="welcome" class="pure-g-r content-ribbon welcome">
             <div class="pure-u-1">
                 <div class="l-box">
                     <h1>WELCOME TO <span>SUN STAR IT</span></h1>
@@ -122,7 +122,7 @@ published: true
                         <div class="my-section-vert mission-vert mission-inner"><p>SunStarIT uses a broad network of partners to provide expertise everytime.</p></div>
                     </li>
                     <li>
-                        <div class="my-title-vert job-vert"><a href="javascript:void(0);"><h1>IT Careers ></h1></a></div>
+                        <div id="careers" class="my-title-vert job-vert"><a href="javascript:void(0);"><h1>IT Careers ></h1></a></div>
                         <div class="my-section-vert job-vert job-inner">
                             SunStarIT helps IT professionals find careers.
                             We can help enhance your career, working one on one with you to ensure your needs are met. 
@@ -136,17 +136,16 @@ published: true
                                 <li>Technical Architects</li>
                                 <li>Systems Analysts</li>
                                 <li>Software Developers</li>
-                                &nbsp;<li>Front End Developers</li>
-                                &nbsp;<li>Back End Developers</li>
-                                &nbsp;<li>C C++ Developers</li>
-                                &nbsp;<li>Object Oriented Programmers</li>
-                                &nbsp;<li>Java Developers</li>
-                                &nbsp;<li>C# and .Net Developers</li>
+                                <li>Front-End UI Developers</li>
+                                <li>C C++ Developers</li>
+                                <li>Java Developers</li>
+                                <li>C# and .Net Developers</li>
                                 <li>Software testers</li>
                                 <li>Database Developers</li>
                                 <li>Administration and Support</li>
-                                &nbsp;<li>Network / Database Admins</li>
+                                <li>Network / Database Admins</li>
                             </ul>
+                            <iframe src="https://docs.google.com/spreadsheet/pub?key=0Ai2uvEsmEAPadHBFTWhWdTZ5MnRTQUNwNkxKbmtzUEE&output=html" width="777px" height="111px"> </iframe>
                         </div>
                     </li>
                 </ul>
@@ -161,7 +160,7 @@ published: true
                 <p>
                    	SunStarIt can Quickly add Consultants to your IT Team 
                 </p>
-                <a href="" class="pure-button">LEARN MORE</a>
+                <!-- <a href="" class="pure-button">LEARN MORE</a> -->
             </div>
             <div class="pure-u-1-3">
                 <h3>Trained Professionals</h3>
@@ -169,7 +168,7 @@ published: true
                 <p>
                     Utilize SunStarIT's Trained Professionals to complete your next project 
                 </p>
-                <a href="" class="pure-button">LEARN MORE</a>
+                <!-- <a href="" class="pure-button">LEARN MORE</a> -->
             </div>
             <div class="pure-u-1-3">
                 <h3>Direct Vendor = Cost Savings</h3>
@@ -177,7 +176,7 @@ published: true
                 <p>
                     Work Directly with SunStarIT to take advantage of the benefits of our technology and cost savings
                 </p>
-                <a href="" class="pure-button">LEARN MORE</a>
+                <!-- <a href="" class="pure-button">LEARN MORE</a> -->
             </div>
         </div>
 

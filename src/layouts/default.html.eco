@@ -118,6 +118,12 @@
 			</a>
 			<span id="phone" class="right"><a href="/pages/contact"> 1-800-55-SUNIT<br/><span class="contact-us">Contact Us</span></a></span>
 			<ul id="head-nav"class="head-nav right">
+				<li>
+					<a id="iconmonstrNav" href="/#welcome"><%- @getIconmonstrBlock('gear2','iNav','iconmonstr-head-nav') %> <span class="block">Technology</span></a>
+				</li>
+				<li>
+					<a id="careerNav" href="/#careers"><%- @getIconmonstrBlock('briefcase5','iNav','iconmonstr-head-nav') %> <span class="block">Careers</span></a>
+				</li>
 				<% for document in @getCollection('pages').toJSON(): %>
 					<li typeof="sioc:Page" about="<%= document.url %>" class="<%= 'active'  if @document.url is document.url %>">
 						<a id="iconmonstrNav" href="<%= document.url %>" property="dc:title"><%- @getIconmonstrBlock(document.iconmonstr,'iNav','iconmonstr-head-nav') %> <span class="block"><%= document.title %></span></a>
@@ -169,7 +175,7 @@
 		<hr/>
 		<div class="pure-g-r">
 			<div class="pure-u-1-2">
-				<h4>COPYRIGHT SUN STAR IT. ALL RIGHTS RESERVED.</h4>
+				<h4>Copyright SunStarIT International Corp. All rights reserved.</h4>
 			</div>
 			<div class="pure-u-1-2 social-icons">
 				<a id="twIcon" href="">

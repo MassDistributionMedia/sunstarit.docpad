@@ -294,6 +294,9 @@ body .primary-button {
 .show{
     display: block;
 }
+iframe{
+    border:0;
+}
 
 /* YUI-MODULE-ACCORDION start */
     #accordions{color: midnightblue;letter-spacing: normal;}
@@ -316,10 +319,9 @@ body .primary-button {
     .my-title-vert a:focus
     .my-title-vert a:hover {background-color:#eee;}
     .my-section-vert{
-        padding:10px;
-        width: 333px;
-        margin: auto;
+        width: 944px;
         text-align: left;
+        padding: 0 77px;
     }
 /* YUI-MODULE-ACCORDION end */
 

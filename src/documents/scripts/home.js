@@ -104,5 +104,9 @@ function(Y)
 		secondHover('#devOut','#devPath','#devThird');
 		secondHover('#projMan','#projPath','#projThird');
 
+		Y.one('#careerNav').on('click', function(){
+			Y.one('.job-vert').simulate('click');
+		});
+
 	});
 });
