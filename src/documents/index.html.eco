@@ -122,7 +122,9 @@ published: true
                         <div class="my-section-vert mission-vert mission-inner"><p>SunStarIT uses a broad network of partners to provide expertise everytime.</p></div>
                     </li>
                     <li>
-                        <div id="careers" class="my-title-vert job-vert"><a href="javascript:void(0);"><h1>IT Careers ></h1></a></div>
+                        <div class="my-title-vert job-vert"><a href="javascript:void(0);">
+                            <span id="careers">.</span>
+                            <h1>IT Careers ></h1></a></div>
                         <div class="my-section-vert job-vert job-inner">
                             SunStarIT helps IT professionals find careers.
                             We can help enhance your career, working one on one with you to ensure your needs are met. 

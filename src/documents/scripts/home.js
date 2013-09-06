@@ -105,7 +105,9 @@ function(Y)
 		secondHover('#projMan','#projPath','#projThird');
 
 		Y.one('#careerNav').on('click', function(){
-			Y.one('.job-vert').simulate('click');
+			if(Y.one('.job-title').hasClass('yui3-accordion-closed')){
+				Y.one('.job-vert').simulate('click');
+			}
 		});
 
 	});

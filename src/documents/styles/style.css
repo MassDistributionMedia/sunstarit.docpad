@@ -338,6 +338,11 @@ iframe{
     margin: 12px -31px 0 0;
 }
 
+#careers{
+    position: absolute;
+    top: -41px;
+}
+
 @-webkit-keyframes rotate {
   from {
     trasform: rotate(0deg);
