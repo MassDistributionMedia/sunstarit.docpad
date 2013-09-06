@@ -48,7 +48,7 @@ published: true
                             </g>
                         </g>
                     </svg>
-                <p>IT Staffing and Contract Placement</p>
+                <p> Add a SunStarIT Consultant to complete your IT Team. </p>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@ published: true
                             </g>
                         </g>
                     </svg>
-                <p>Hire a Team of Consultants for Your Project</p>
+                <p>Let a team of SunStarIT Consultants develop your next project.</p>
                 </div>
             </div>
             <div id="projThird" class="pure-u-1-3">
@@ -85,7 +85,7 @@ published: true
                     </g>
                 </g>
                 </svg>
-                <p> Let a SunStarIT Project Manager Orchastrate your Next IT Project to Fullfullment </p>
+                <p> Choose a SunStarIT Project Manager to orchastrate your next IT project to fullfullment. </p>
                 </div>
             </div>
         </div>
@@ -105,17 +105,48 @@ published: true
                 <div id="accordion-test-vert-markup" class="accordion-test-vert"></div>
                 <ul id="accordion-test-vert-markup-content" class="yui3-widget-loading">
                     <li>
-                        <div class="my-title-vert vision-vert"><a href="javascript:void(0);"><h1>VISION ></h1></a></div>
-                        <div class="my-section-vert vision-vert vision-inner"><p>testing</p></div>
+                        <div class="my-title-vert vision-vert"><a href="javascript:void(0);"><h1>Technical Consultants ></h1></a></div>
+                        <div class="my-section-vert vision-vert vision-inner">
+                            <span>
+                            <ul>
+                                <li>Candidate Database</li>
+                                <li>Professional Network</li>
+                                <li>Technology</li>
+                                <li>Personal Communication</li>
+                            </ul>
+                            </span>
+                        </div>
                     </li>
                     <li>
-                        <div class="my-title-vert mission-vert"><a href="javascript:void(0);"><h1>MISSION ></h1></a></div>
-                        <div class="my-section-vert mission-vert mission-inner"><p>testing testing</p></div>
+                        <div class="my-title-vert mission-vert"><a href="javascript:void(0);"><h1>IT Professional Network ></h1></a></div>
+                        <div class="my-section-vert mission-vert mission-inner"><p>SunStarIT uses a broad network of partners to provide expertise everytime.</p></div>
                     </li>
                     <li>
-                        <div class="my-title-vert job-vert"><a href="javascript:void(0);"><h1>JOB BOARD ></h1></a></div>
+                        <div class="my-title-vert job-vert"><a href="javascript:void(0);"><h1>IT Careers ></h1></a></div>
                         <div class="my-section-vert job-vert job-inner">
-                            <h3>IN DEVELOPMENT.</h3>
+                            SunStarIT helps IT professionals find careers.
+                            We can help enhance your career, working one on one with you to ensure your needs are met. 
+                            <h3>We place candidates in all parts of Software Development Cycle with many different companies and industries. Will work directly with a person to understand needs. Our team works together utilizing technology tools/systems and personal networks to ensure results.</h3>
+                            <br/>
+                            General Careers
+                            <ul>
+                                <li>IT Directors</li>
+                                <li>Business Analysts</li>
+                                <li>Project Managers</li>
+                                <li>Technical Architects</li>
+                                <li>Systems Analysts</li>
+                                <li>Software Developers</li>
+                                &nbsp;<li>Front End Developers</li>
+                                &nbsp;<li>Back End Developers</li>
+                                &nbsp;<li>C C++ Developers</li>
+                                &nbsp;<li>Object Oriented Programmers</li>
+                                &nbsp;<li>Java Developers</li>
+                                &nbsp;<li>C# and .Net Developers</li>
+                                <li>Software testers</li>
+                                <li>Database Developers</li>
+                                <li>Administration and Support</li>
+                                &nbsp;<li>Network / Database Admins</li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
