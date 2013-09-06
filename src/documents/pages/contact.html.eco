@@ -5,7 +5,18 @@ tags: ['page', 'contact']
 iconmonstr: location16
 pageOrder: 3
 ---
+
+<br/>
+
     <strong>SunStarIT</strong> <br/>
+    <p>
+        1-855-557-8648 Office <br> 1-855-557-7699 Fax
+    </p>
+
+    <p>
+        <a class="color-blue" href="mailto:info@sales.com">info@sunstarit.com</a>
+    </p>
+
 	197 State Route 18 - 
 	Suite 3000 - 
 	East Brunswick NJ 08816
