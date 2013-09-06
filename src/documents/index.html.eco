@@ -11,11 +11,10 @@ published: true
             <div class="pure-u-1">
                 <div class="l-box splash-text center-text">
                     <h1 class="splash-head">
-                        WEBSITE IS CURRENTLY UNDER DEVELOPMENT.<br/>
                         The new approach to modern Information Technology Consultancy.
                     </h1>
                     <p>   
-                        <a href="#" class="pure-button splash-button btn-big"><span></span><span>FIND OUT MORE</span></a>
+                        <a href="/#welcome" class="pure-button splash-button btn-big"><span></span><span>FIND OUT MORE</span></a>
                     </p>
                 </div>
             </div>
@@ -129,7 +128,8 @@ published: true
                             SunStarIT helps IT professionals find careers.
                             We can help enhance your career, working one on one with you to ensure your needs are met. 
                             <h3>We place candidates in all parts of Software Development Cycle with many different companies and industries. Will work directly with a person to understand needs. Our team works together utilizing technology tools/systems and personal networks to ensure results.</h3>
-                            <br/>
+                            See positions below and send your resume to <a class="color-white" href="mailto:jobs@sales.com">jobs@sunstarit.com</a> so we can introduce you to your career agent and make job reccomendations.
+                            <br/><br/>
                             <ul class="left clear-none">
                                 <strong>General Careers</strong>
                                 <li>IT Directors</li>
@@ -138,6 +138,7 @@ published: true
                                 <li>Technical Architects</li>
                                 <li>Systems Analysts</li>
                                 <li>Software Developers</li>
+                                <li>Red Hat, UNIX, Solaris</li>
                                 <li>Front-End UI Developers</li>
                                 <li>C C++ Developers</li>
                                 <li>Java Developers</li>
@@ -188,7 +189,7 @@ published: true
                     <br/>
                     <h1>The new approach to modern Information Technology Consultancy.</h1>
                     <h2>Get started now.</h2><br/><br/>
-                    <a href="#" class="pure-button pure-button-primary btn-big">GET IN TOUCH</a>
+                    <a href="/pages/contact" class="pure-button pure-button-primary btn-big">GET IN TOUCH</a>
                     <br/>
                     <br/>
                 </div>

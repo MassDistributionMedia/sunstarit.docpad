@@ -167,7 +167,9 @@
 					<%- @getIconmonstrBlock('email','footEmail') %>
 					<%- @getIconmonstrBlock('email8','footEmail8') %>
 					 <p>
-					 	sales@sunstarit.com <br> jobs@sunstarit.com 
+					 	<a class="color-c9" href="mailto:jobs@sales.com">sales@sunstarit.com</a>
+					 	<br>
+					 	<a class="color-c9" href="mailto:jobs@sales.com">jobs@sunstarit.com</a> 
 					 </p>
 				</span>
 			</div>
@@ -176,25 +178,11 @@
 		<div class="pure-g-r">
 			<div class="pure-u-1-2">
 				<h4>Copyright SunStarIT International Corp. All rights reserved.</h4>
-			</div>
+			</div> 
+			<!--
 			<div class="pure-u-1-2 social-icons">
-				<a id="twIcon" href="">
-					<%- @getIconmonstrBlock('twitter4','footTwitter4') %>
-					<%- @getIconmonstrBlock('twitter5','footTwitter5') %>
-				</a>
-				<a id="fbIcon" href="">
-					<%- @getIconmonstrBlock('facebook4','footFacebook4') %>
-					<%- @getIconmonstrBlock('facebook5','footFacebook5') %>
-				</a>
-				<a id="gpIcon" href="">
-					<%- @getIconmonstrBlock('googleplus4','footGplus4') %>
-					<%- @getIconmonstrBlock('googleplus5','footGplus5') %>
-				</a>
-				<a id="inIcon" href="">
-					<%- @getIconmonstrBlock('linkedin4','footLinkedin4') %>
-					<%- @getIconmonstrBlock('linkedin5','footLinkedin5') %>
-				</a>
 			</div>
+			-->
 		</div>
 	</div>
 	<div class="footer pure-u-1">

@@ -30,6 +30,14 @@ a{text-decoration: none;color:#FFE03F;}
     position: absolute;
 }
 
+.color-blue{
+    color: blue;
+}
+
+.color-c9{
+    color: #c9c9c9;
+}
+
 .block{
     display: block;
 }
