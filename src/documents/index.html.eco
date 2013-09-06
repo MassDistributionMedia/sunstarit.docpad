@@ -128,8 +128,8 @@ published: true
                             We can help enhance your career, working one on one with you to ensure your needs are met. 
                             <h3>We place candidates in all parts of Software Development Cycle with many different companies and industries. Will work directly with a person to understand needs. Our team works together utilizing technology tools/systems and personal networks to ensure results.</h3>
                             <br/>
-                            General Careers
-                            <ul>
+                            <ul class="left clear-none">
+                                <strong>General Careers</strong>
                                 <li>IT Directors</li>
                                 <li>Business Analysts</li>
                                 <li>Project Managers</li>
@@ -145,7 +145,7 @@ published: true
                                 <li>Administration and Support</li>
                                 <li>Network / Database Admins</li>
                             </ul>
-                            <iframe src="https://docs.google.com/spreadsheet/pub?key=0Ai2uvEsmEAPadHBFTWhWdTZ5MnRTQUNwNkxKbmtzUEE&output=html" width="777px" height="111px"> </iframe>
+                            <iframe class="right career-sheet" src="https://docs.google.com/spreadsheet/pub?key=0Ai2uvEsmEAPadHBFTWhWdTZ5MnRTQUNwNkxKbmtzUEE&single=true&gid=0&output=html" width="707px" height="434px"> </iframe>
                         </div>
                     </li>
                 </ul>

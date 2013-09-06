@@ -34,8 +34,16 @@ a{text-decoration: none;color:#FFE03F;}
     display: block;
 }
 
+.left{
+    float: left;
+}
+
 .right{
     float: right;
+}
+
+.clear-none{
+    clear:none;
 }
 
 .header {
@@ -319,11 +327,16 @@ iframe{
     .my-title-vert a:focus
     .my-title-vert a:hover {background-color:#eee;}
     .my-section-vert{
-        width: 944px;
+        padding: 0 77px 44px;
         text-align: left;
-        padding: 0 77px;
+        overflow-x: hidden;
     }
 /* YUI-MODULE-ACCORDION end */
+
+.career-sheet{
+    clear: none;
+    margin: 12px -31px 0 0;
+}
 
 @-webkit-keyframes rotate {
   from {
