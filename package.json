@@ -1,13 +1,18 @@
 {
-  "name": "yui-purecss.docpad",
-  "version": "0.0.1",
-  "description": "YUI Purecss skeleton for DocPad. Simple, flexible and clean HTML and CSS for popular user interface components and interactions.",
+  "name": "sunstarit.docpad",
+  "version": "0.0.1-1",
+  "description": "",
   "keywords": [
-    "docpad-skeleton",
     "docpad",
     "website",
-    "purecss",
-    "yui purecss"
+    "sunstarit",
+    "sunstar-it",
+    "sun-star-it"
+  ],
+  "subdomain": "sunstarit-mdm",
+  "domains": [
+    "sunstarit.com",
+    "www.sunstarit.com"
   ],
   "author": "Mass Distribution Media <mike@mdm.cm> (http://mdm.cm)",
   "maintainers": [
@@ -28,7 +33,7 @@
     "npm": "1.2"
   },
   "dependencies": {
-    "docpad": "~6.51.6",
+    "docpad": "~6.52.1",
     "docpad-plugin-cleanurls": "~2.5.1",
     "docpad-plugin-coffeescript": "~2.2.2",
     "docpad-plugin-eco": "~2.0.2",
@@ -41,7 +46,8 @@
     "docpad-plugin-iconmonstr": "~2.0.11",
     "docpad-plugin-ghpages": "~2.3.0",
     "docpad-plugin-basicauth": "~2.0.1",
-    "docpad-plugin-contactify": "~2.0.7"
+    "docpad-plugin-contactify": "~2.0.7",
+    "docpad-plugin-minicms": "~2.1.9"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.5.3"
