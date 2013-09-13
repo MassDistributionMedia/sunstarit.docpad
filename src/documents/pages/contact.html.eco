@@ -1,9 +1,12 @@
 ---
 title: Contact
 layout: page
-tags: ['page', 'contact']
+tags: 
+  - page
+  - contact
 iconmonstr: location16
 pageOrder: 3
+published: true
 ---
 
 <br/>
@@ -14,7 +17,7 @@ pageOrder: 3
     </p>
 
     <p>
-        <a class="color-blue" href="mailto:info@sales.com">info@sunstarit.com</a>
+        <a class="color-blue" href="mailto:info@sunstarit.com">info@sunstarit.com</a>
     </p>
 
 	197 State Route 18 - 
