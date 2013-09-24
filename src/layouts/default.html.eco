@@ -171,9 +171,9 @@
 					<%- @getIconmonstrBlock('email','footEmail') %>
 					<%- @getIconmonstrBlock('email8','footEmail8') %>
 					 <p>
-					 	<a class="color-c9" href="mailto:jobs@sales.com">sales@sunstarit.com</a>
+					 	<a class="color-c9" href="mailto:jobs@sunstarit.com">sales@sunstarit.com</a>
 					 	<br>
-					 	<a class="color-c9" href="mailto:jobs@sales.com">jobs@sunstarit.com</a> 
+					 	<a class="color-c9" href="mailto:jobs@sunstarit.com">jobs@sunstarit.com</a> 
 					 </p>
 				</span>
 			</div>
