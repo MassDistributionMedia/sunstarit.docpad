@@ -7,6 +7,7 @@ function(Y)
 		Y.all('#phone').addClass('phone-scrolled');
 		Y.all('#head-nav').addClass('head-nav-scrolled');
 		Y.all('#logoSVG').addClass('logoSVG-scrolled');
+		Y.one('.mobile-menu').setStyle('margin', '-2px 0 0 0');
 	}
 
 	function scrolledTop(){
@@ -15,6 +16,7 @@ function(Y)
 		Y.all('#phone').removeClass('phone-scrolled');
 		Y.all('#head-nav').removeClass('head-nav-scrolled');
 		Y.all('#logoSVG').removeClass('logoSVG-scrolled');
+		Y.one('.mobile-menu').setStyle('margin', '14px 0 0 0');
 	}
 
 	Y.one('#main-header').on({
@@ -53,5 +55,13 @@ function(Y)
 		iconHover('#inIcon','#footLinkedin5','#footLinkedin4');
 	
 	});
+
+	// Mobile menu
+	Y.one('select').on('change', function(){
+		var selIndex = this.get("selectedIndex");
+		var attrOpts = this.get("options");
+		window.location = attrOpts.item(selIndex).get('value');
+	});
+	// http://yuilibrary.com/yui/docs/attribute/attribute-event.html
 
 });

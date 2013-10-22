@@ -38,7 +38,6 @@
     "docpad-plugin-coffeescript": "~2.2.2",
     "docpad-plugin-dce": "https://github.com/MassDistributionMedia/docpad-plugin-dce/tarball/master",
     "docpad-plugin-eco": "~2.0.2",
-    "docpad-plugin-less": "~2.2.0",
     "docpad-plugin-marked": "~2.1.1",
     "docpad-plugin-partials": "~2.8.0",
     "docpad-plugin-related": "~2.0.5",
@@ -46,6 +45,7 @@
     "docpad-plugin-text": "~2.3.0",
     "docpad-plugin-iconmonstr": "~2.0.13",
     "docpad-plugin-ghpages": "~2.4.0",
+    "docpad-plugin-partials": "~2.8.0",
     "docpad-plugin-contactify": "~2.0.10",
     "docpad-plugin-restapi": "~2.2.0"
   },

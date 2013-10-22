@@ -487,16 +487,20 @@ iframe{
         color: rgba(102, 102, 102, 0.79);
     }
 
-#mobileNav{
+#attrSel{
     display: none;
 }
 
 @media screen and (max-width: 960px){
     #head-nav{display: none;}
-    #mobileNav{display: inline-block;}
+    #attrSel{display: inline-block;}
     #phone{display: none;}
     .splash-head{font-size: 23px !important;}
-    #mobileNav{
+    .mobile-menu{
+        margin: 14px 0 0 0;
+        width: 100%;
+    }
+    #attrSel{
         width: 86%;
         height: 44px;
         font-size: 26px;
