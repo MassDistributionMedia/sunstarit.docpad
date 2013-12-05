@@ -1,0 +1,10 @@
+---
+layout: 'default'
+title: 'iconmonstrs'
+---
+
+<%- @getIconmonstrBlock('globe', 'height:64px') %>
+<%- @getIconmonstrBlock('info2', 'height:64px') %>
+<%- @getIconmonstrBlock('wrench7', 'height:64px') %>
+<%- @getIconmonstrBlock('thumb15', 'height:64px') %>
+<%- @getIconmonstrBlock('email10', 'height:64px') %>
