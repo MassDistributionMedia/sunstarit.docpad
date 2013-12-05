@@ -133,6 +133,9 @@ docpadConfig = {
 		basicauth: false
 
 	plugins:
+		
+		###
+		Commented out whilst on GitHub Pages
 		contactify:
 			path: '/contact'
 			transport: {
@@ -147,6 +150,7 @@ docpadConfig = {
 
 		# This contains all the configuration of minicms, used for the admin panel of our blog
 		# It allows you to define lists, forms and how to generate the final content
+		
 		minicms:
 
 			prefix:
@@ -437,6 +441,8 @@ docpadConfig = {
 						type:		'text'
 					]
 			]
+			miniCMS ends
+			###
 
 	# Express' basicAuth
 	basicAuth:
